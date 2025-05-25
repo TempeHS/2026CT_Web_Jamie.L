@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     card_data = (
-        ("Mantis Lords", "The Mantis Lords are 3 sisters you must fight and defeat in the Mantis Village", "Go to boss", "static/images/Card_1"),
+        ("Mantis Lords", "The Mantis Lords are 3 sisters you must fight and defeat in the Mantis Village", "Go to boss", "static/images/Card_1.png"),
         ("Nightmare King Grim", "Leader of the grim troupe, and taken over by the nightmare heart", "Go to boss", )
     )
     
