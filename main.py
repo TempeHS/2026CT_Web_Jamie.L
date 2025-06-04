@@ -28,5 +28,10 @@ def checklist():
 def bossinfo():
     return render_template("bossinfo.html"), 200
 
+@app.route('/falseknight.html')
+def falseknight():
+    return render_template("falseknight.html"), 200
+
+
 if __name__ == '__main__':
     app.run(debug=True)
