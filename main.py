@@ -7,11 +7,11 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     card_data = (
-        ("Mantis Lords", "The three sisters and leaders of the mantis tribe", "Go to boss", "static/images/Card_1.png"),
-        ("Nightmare King Grim", "Leader of the grim troupe, and taken over by the nightmare heart", "Go to boss" ),
-        ("Sly", "Scammer, Shopkeeper and nail art master", "Go to boss" ),
-        ("Gorb", "THE GREAT MIND GORB", "Go to boss"),
-        ("Hornet", "Protector of hallownest", "Go to boss"),
+        ("Mantis Lords", "The three sisters and leaders of the mantis tribe", "/mantislords.html", "static/images/Card_1.png"),
+        ("Nightmare King Grim", "Leader of the grim troupe, and taken over by the nightmare heart", "/bossinfo.html" ),
+        ("Sly", "Scammer, Shopkeeper and nail art master", "/bossinfo.html" ),
+        ("Gorb", "THE GREAT MIND GORB", "/bossinfo.html"),
+        ("Hornet Protector", "Protector of hallownest", "/hornet1.html"),
     )
     
     return render_template("index.html", cards=card_data), 200
@@ -31,6 +31,34 @@ def bossinfo():
 @app.route('/falseknight.html')
 def falseknight():
     return render_template("falseknight.html"), 200
+
+@app.route('/gruzmother.html')
+def gruzmother():
+    return render_template("gruzmother.html"), 200
+
+@app.route('/broodingmawlek.html')
+def broodingmawlek():
+    return render_template("broodingmawlek.html"), 200
+
+@app.route('/hornet1.html')
+def hornet1():
+    return render_template("hornet1.html"), 200
+
+@app.route('/MMM.html')
+def MMM():
+    return render_template("MMM.html"), 200
+
+@app.route('/mantislords.html')
+def mantislords():
+    return render_template("mantislords.html"), 200
+
+@app.route('/soulmaster.html')
+def soulmaster():
+    return render_template("soulmaster.html"), 200
+
+@app.route('/brokenvessel.html')
+def brokenvessel():
+    return render_template("brokenvessel.html"), 200
 
 
 if __name__ == '__main__':
