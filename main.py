@@ -3,6 +3,7 @@ from flask import render_template
 
 app = Flask(__name__)
 
+
 @app.route('/index.html')
 @app.route('/')
 def index():
@@ -59,6 +60,10 @@ def soulmaster():
 @app.route('/brokenvessel.html')
 def brokenvessel():
     return render_template("brokenvessel.html"), 200
+
+@app.route('/xero.html')
+def xero():
+    return render_template("xero.html"), 200
 
 
 if __name__ == '__main__':

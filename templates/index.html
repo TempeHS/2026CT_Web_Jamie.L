@@ -1,5 +1,7 @@
-{% extends 'layout.html' %} {% block content %} {% include
-"partials/slider.html" %}
+{% extends 'layout.html' %} {% block content %}
+<p class="text-center">hi</p>
+<p class="text-start p-4">Welcome!</p>
+{% include "partials/slider.html" %}
 <div class="container">
   <div class="row">
     {% for card in cards %}
@@ -16,4 +18,5 @@
     {% endfor %}
   </div>
 </div>
+
 {% endblock %}
