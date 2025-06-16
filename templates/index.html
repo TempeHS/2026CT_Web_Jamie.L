@@ -1,7 +1,37 @@
 {% extends 'layout.html' %} {% block content %}
-<p class="text-center">hi</p>
-<p class="text-start p-4">Welcome!</p>
-{% include "partials/slider.html" %}
+<p class="text-center fs-2">Welcome to Hallownest</p>
+<p class="text-start p-4">
+  Welcome to Hallownest, a vast, ruined kingdom full of secrets, danger, and
+  unforgettable battles. Hollow Knight is renowned not just for its beautiful,
+  hand-drawn world and haunting soundtrack, but also for its intense and
+  memorable boss fights. Whether you're a first-time player struggling to
+  survive your encounter with Hornet or a veteran prepping for the brutal
+  Pantheon of Hallownest, this site is your companion through every
+  nail-swinging, soul-draining battle the game throws at you. This guide was
+  built with one purpose: to help you defeat every boss in Hollow Knight, no
+  matter your skill level. From the early game’s deceptively simple enemies to
+  the late-game challenges that push even the best players to their limits,
+  we’ve broken down each boss with clear, detailed strategies. You’ll find
+  recommended charms, movement tactics, attack patterns, and expert tips
+  tailored to help you adapt and conquer. But this isn’t just about winning
+  fights — it’s about understanding them. Each boss in Hollow Knight has its own
+  rhythm, personality, and lore. By studying their behavior and mastering your
+  own movement, you won’t just survive — you’ll thrive. And for those aiming to
+  complete the Pantheons or pursue 112% completion, we’ve got advanced
+  strategies and charm setups to help you optimize your build and approach.
+</p>
+
+<div class="row allign-items-center">
+  <div class="col-md-4">
+    <p class="text-start">On this site, you'll find:</p>
+    <ul class="ps-4">
+      <li>Charm builds</li>
+      <li>Boss strategies</li>
+      <li>And much more!</li>
+    </ul>
+  </div>
+  <div class="col-md-8">{% include "partials/slider.html" %}</div>
+</div>
 <div class="container">
   <div class="row">
     {% for card in cards %}
