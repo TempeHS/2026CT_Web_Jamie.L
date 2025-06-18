@@ -65,6 +65,13 @@ def brokenvessel():
 def xero():
     return render_template("xero.html"), 200
 
+@app.route('/scam.html')
+def scam():
+    return render_template("scam.html"), 200
+
+@app.route('/scam2.html')
+def scam2():
+    return render_template("scam2.html"), 200
 
 if __name__ == '__main__':
     app.run(debug=True)

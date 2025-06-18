@@ -20,18 +20,15 @@
   complete the Pantheons or pursue 112% completion, we’ve got advanced
   strategies and charm setups to help you optimize your build and approach.
 </p>
-
-<div class="row allign-items-center">
-  <div class="col-md-4">
-    <p class="text-start">On this site, you'll find:</p>
-    <ul class="ps-4">
-      <li>Charm builds</li>
-      <li>Boss strategies</li>
-      <li>And much more!</li>
-    </ul>
-  </div>
-  <div class="col-md-8">{% include "partials/slider.html" %}</div>
+<div class="col-md-4">
+  <p class="text-start ps-3">On this site, you'll find:</p>
+  <ul class="ps-4">
+    <li>Charm builds</li>
+    <li>Boss strategies</li>
+    <li>And much more!</li>
+  </ul>
 </div>
+{% include "partials/slider.html" %}
 <div class="container">
   <div class="row">
     {% for card in cards %}
@@ -46,6 +43,23 @@
       </div>
     </div>
     {% endfor %}
+  </div>
+</div>
+
+<div
+  style="
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1050;
+    width: 200px;
+  "
+  class="card shadow"
+>
+  <div class="card-body text-center">
+    <h5 class="card-title">MR BEAST GIVING FREE MONEY</h5>
+    <p class="card-text">CLICK BELOW</p>
+    <a href="/scam.html" class="btn btn-primary">CLICK ME</a>
   </div>
 </div>
 
