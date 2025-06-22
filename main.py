@@ -53,18 +53,6 @@ def MMM():
 def mantislords():
     return render_template("mantislords.html"), 200
 
-@app.route('/soulmaster.html')
-def soulmaster():
-    return render_template("soulmaster.html"), 200
-
-@app.route('/brokenvessel.html')
-def brokenvessel():
-    return render_template("brokenvessel.html"), 200
-
-@app.route('/xero.html')
-def xero():
-    return render_template("xero.html"), 200
-
 @app.route('/scam.html')
 def scam():
     return render_template("scam.html"), 200
@@ -72,6 +60,14 @@ def scam():
 @app.route('/scam2.html')
 def scam2():
     return render_template("scam2.html"), 200
+
+@app.route('/miniboss.html')
+def miniboss():
+    return render_template("miniboss.html"), 200
+
+@app.route('/charms.html')
+def charms():
+    return render_template("charms.html"), 200
 
 if __name__ == '__main__':
     app.run(debug=True)
