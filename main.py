@@ -69,5 +69,9 @@ def miniboss():
 def charms():
     return render_template("charms.html"), 200
 
+@app.route('/pantheon.html')
+def pantheon():
+    return render_template("pantheon.html"), 200
+
 if __name__ == '__main__':
     app.run(debug=True)
