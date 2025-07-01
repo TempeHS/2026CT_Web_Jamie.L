@@ -73,5 +73,9 @@ def charms():
 def pantheon():
     return render_template("pantheon.html"), 200
 
+@app.route('/hallownest.html')
+def hallownest():
+    return render_template("hallownest.html"), 200
+
 if __name__ == '__main__':
     app.run(debug=True)
